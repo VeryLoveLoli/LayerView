@@ -11,6 +11,7 @@ import UIKit
 /**
  媒体图层视图
  */
+@available(iOS 13.0, *)
 open class MetalLayerView: UIView {
     
     /// 图层类型
