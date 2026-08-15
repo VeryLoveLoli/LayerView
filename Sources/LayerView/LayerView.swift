@@ -20,6 +20,54 @@ open class LayerView<T>: UIView where T : CALayer {
     open var classLayer: T { return layer as! T }
 }
 
+/**
+ 图层按钮
+ 无法使用`@IBOutlet`连接
+ */
+open class LayerButton<T>: UIButton where T : CALayer {
+    
+    /// 图层类型
+    open override class var layerClass: AnyClass { return T.self }
+    /// 当前类型图层
+    open var classLayer: T { return layer as! T }
+}
+
+/**
+ 图层标签
+ 无法使用`@IBOutlet`连接
+ */
+open class LayerLabel<T>: UILabel where T : CALayer {
+    
+    /// 图层类型
+    open override class var layerClass: AnyClass { return T.self }
+    /// 当前类型图层
+    open var classLayer: T { return layer as! T }
+}
+
+/**
+ 图层图片视图
+ 无法使用`@IBOutlet`连接
+ */
+open class LayerImageView<T>: UIImageView where T : CALayer {
+    
+    /// 图层类型
+    open override class var layerClass: AnyClass { return T.self }
+    /// 当前类型图层
+    open var classLayer: T { return layer as! T }
+}
+
+/**
+ 图层控制
+ 无法使用`@IBOutlet`连接
+ */
+open class LayerControl<T>: UIControl where T : CALayer {
+    
+    /// 图层类型
+    open override class var layerClass: AnyClass { return T.self }
+    /// 当前类型图层
+    open var classLayer: T { return layer as! T }
+}
+
 /**无法使用`@IBOutlet`连接
 /**
  渐变图层视图
